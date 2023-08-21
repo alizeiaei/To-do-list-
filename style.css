@@ -1,0 +1,123 @@
+@import url("https://v1.fontapi.ir/css/Yekan");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Yekan, sans-serif;
+}
+
+/* --------------root-------------- */
+
+:root {
+  --primery-color: #6d28d9;
+  --secendery-color: #ede9fe;
+  --main-white: #fff;
+  --main-black: #222;
+  --main-Gray: #7c7c7c;
+  --body-color: #f6f6f6;
+  --secondery-red: rgb(244, 35, 35);
+}
+
+/* -----------container----------- */
+
+.container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------form--------------- */
+
+.form h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.form input {
+  outline: none;
+  border: none;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.form button {
+  border: none;
+  font-size: 30px;
+  background-color: var(--main-white);
+  color: var(--primery-color);
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.form button:hover {
+  background-color: var(--primery-color);
+  color: var(--main-white);
+}
+
+/* -------------todo-container------------- */
+
+.todo-container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.todo-container select {
+  border: none;
+  font-size: 25px;
+}
+
+/* -------------todo-Input---------------- */
+
+.todo-Input {
+  background-color: var(--main-white);
+}
+
+/* --------------todo-List----------------- */
+
+.todo-List {
+  margin-top: 1rem;
+  width: 25rem;
+  height: auto;
+}
+
+/* -----------------todo------------------ */
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secendery-color);
+  color: var(--primery-color);
+  column-gap: 1rem;
+  font-size: 23px;
+  margin-bottom: 0.6rem;
+  transition: 0.5s;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.completed li {
+  text-decoration: line-through blue;
+}
+
+.todo li {
+  list-style: none;
+  flex: 1;
+}
+
+.todo i {
+  cursor: pointer;
+}
+
+.fa-trash-can {
+  color: var(--secondery-red);
+  margin-right: 0.5rem;
+}
+
+/* --------end--------- */
